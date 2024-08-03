@@ -1,5 +1,11 @@
 import { Inter } from "next/font/google";
-import "./globals.css";
+import "@/public/assets/libs/tiny-slider/tiny-slider.css";
+import "@/public/assets/libs/tobii/css/tobii.min.css";
+import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
+import "@/public/assets/libs/@iconscout/unicons/css/line.css";
+import "@/public/assets/libs/@mdi/font/css/materialdesignicons.min.css";
+import "@/public/assets/css/tailwind.min.css";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,8 +16,15 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="light scroll-smooth" dir="ltr">
+      <body className={inter.className + " dark:bg-slate-900"}>{children}</body>
+      <Script src="/assets/libs/tiny-slider/min/tiny-slider.js"></Script>
+      <Script src="/assets/libs/tobii/js/tobii.min.js"></Script>
+      <Script src="/assets/libs/choices.js/public/assets/scripts/choices.min.js"></Script>
+      <Script src="/assets/js/easy_background.js"></Script>
+      <Script src="/assets/libs/feather-icons/feather.min.js"></Script>
+      <Script src="/assets/js/plugins.init.js"></Script>
+      <Script src="/assets/js/app.js"></Script>    
     </html>
   );
 }

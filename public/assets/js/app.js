@@ -1,30 +1,3 @@
-/* Template Name: Hously - Tailwind CSS Real Estate Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
-   Version: 2.0.0
-   Created: June 2022
-   File Description: Main JS file of the template
-*/
-
-
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Loader               *
- *     02.  Toggle Menus         *
- *     03.  Active Menu          *
- *     04.  Clickable Menu       *
- *     05.  Menu Sticky          *
- *     06.  Back to top          *
- *     07.  Active Sidebar Menu  *
- *     08.  Feather icon         *
- *     09.  Small Menu           *
- *     10.  Contact JS           *
- *     11.  Light & Dark Theme   *
- *     12.  LTR & RTL Mode       *
- ================================*/
-
 window.addEventListener('load', fn, false)
 
 //  window.onload = function loader() {
@@ -330,3 +303,10 @@ try{
     switcherRtl?.addEventListener("click" ,changeLayout )
 }
 catch(err){}
+
+easy_background("#home",
+    {
+        slide: ["/assets/images/bg/01.jpg", "/assets/images/bg/02.jpg", "assets/images/bg/03.jpg"],
+        delay: [4000, 4000, 4000]
+    }
+);

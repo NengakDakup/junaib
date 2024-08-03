@@ -111,3 +111,5 @@ function easy_background(selector, sld_args) {
   }, sld_args.delay.length);
 
 }
+
+window.easy_background = easy_background
