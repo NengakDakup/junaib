@@ -1,10 +1,10 @@
-
+"use client"
 
 export const Header = () => {
   return (
     <nav id="topnav" className="defaultscroll is-sticky">
       <div className="container relative">
-        <a className="logo" href="index.html">
+        <a className="logo" href="/">
           <img
             src="assets/images/logo-dark.png"
             className="inline-block dark:hidden !w-1"
@@ -98,7 +98,7 @@ export const Header = () => {
             </li>
 
             <li>
-              <a href="buy.html" className="sub-menu-item">
+              <a href="/faq" className="sub-menu-item">
                 FAQ
               </a>
             </li>
