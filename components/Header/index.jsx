@@ -1,4 +1,4 @@
-import React from "react";
+
 
 export const Header = () => {
   return (
@@ -7,12 +7,12 @@ export const Header = () => {
         <a className="logo" href="index.html">
           <img
             src="assets/images/logo-dark.png"
-            className="inline-block dark:hidden"
+            className="inline-block dark:hidden !w-1"
             alt=""
           />
           <img
             src="assets/images/logo-light.png"
-            className="hidden dark:inline-block"
+            className="hidden dark:inline-block !w-1"
             alt=""
           />
         </a>
@@ -99,18 +99,18 @@ export const Header = () => {
 
             <li>
               <a href="buy.html" className="sub-menu-item">
-                Buy
+                FAQ
               </a>
             </li>
 
             <li>
               <a href="sell.html" className="sub-menu-item">
-                Sell
+                Blog
               </a>
             </li>
 
             <li className="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Listing</a>
+              <a href="javascript:void(0)">About us</a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li className="has-submenu parent-menu-item">
@@ -170,7 +170,7 @@ export const Header = () => {
             </li>
 
             <li className="has-submenu parent-parent-menu-item">
-              <a href="javascript:void(0)">Pages</a>
+              <a href="javascript:void(0)">Team</a>
               <span className="menu-arrow"></span>
               <ul className="submenu">
                 <li>
@@ -280,7 +280,13 @@ export const Header = () => {
 
             <li>
               <a href="contact.html" className="sub-menu-item">
-                Contact
+                Project
+              </a>
+            </li>
+
+            <li>
+              <a href="contact.html" className="sub-menu-item">
+                Contact us
               </a>
             </li>
           </ul>
