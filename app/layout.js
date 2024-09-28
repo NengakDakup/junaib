@@ -5,6 +5,7 @@ import "@/public/assets/libs/choices.js/public/assets/styles/choices.min.css";
 import "@/public/assets/libs/@iconscout/unicons/css/line.css";
 import "@/public/assets/libs/@mdi/font/css/materialdesignicons.min.css";
 import "@/public/assets/css/tailwind.min.css";
+import "@/public/assets/css/font.css";
 import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,14 +21,14 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.png" />
       </head>
-      <body className={inter.className + " dark:bg-slate-900"}>{children}</body>
+      <body className="dark:bg-slate-900">{children}</body>
       <Script src="/assets/libs/tiny-slider/min/tiny-slider.js"></Script>
       <Script src="/assets/libs/tobii/js/tobii.min.js"></Script>
       <Script src="/assets/libs/choices.js/public/assets/scripts/choices.min.js"></Script>
       <Script src="/assets/js/easy_background.js"></Script>
       <Script src="/assets/libs/feather-icons/feather.min.js"></Script>
       <Script src="/assets/js/plugins.init.js"></Script>
-      <Script src="/assets/js/app.js"></Script>    
+      <Script src="/assets/js/app.js"></Script>
     </html>
   );
 }
