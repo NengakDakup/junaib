@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import Hero from "@/components/Hero";
 import Info from "@/components/Info";
+import Testimonials from "@/components/Testimonials";
 import WhatWeAre from "@/components/WhatWeAre";
 
 export default function Home() {
@@ -19,6 +20,8 @@ export default function Home() {
       {/* <Info /> */}
 
       <Features />
+
+      <Testimonials />
 
       <ContactUs />
 

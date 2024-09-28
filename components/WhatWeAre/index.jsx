@@ -40,7 +40,7 @@ function WhatWeAre() {
               <img
                 className="rounded-full"
                 width={64}
-                src="/assets/images/client/01.jpg"
+                src="/assets/images/abdulbasit_cropped.png"
               />
               <div>
                 <p className="font-semibold">Abdulbasit Ohiare</p>

@@ -61,6 +61,18 @@ export const Header = () => {
               </a>
             </li>
 
+            <li className={isActive("/about")}>
+              <a href="/about" className={`sub-menu-item`}>
+                About Us
+              </a>
+            </li>
+
+            <li className={isActive("/projects")}>
+              <a href="/projects" className={`sub-menu-item`}>
+                Projects
+              </a>
+            </li>
+
             <li className={isActive("/faq")}>
               <a href="/faq" className={`sub-menu-item `}>
                 FAQs
@@ -70,24 +82,6 @@ export const Header = () => {
             <li className={isActive("/blog")}>
               <a href="/blog" className={`sub-menu-item `}>
                 Blog
-              </a>
-            </li>
-
-            <li className={isActive("/about")}>
-              <a href="/about" className={`sub-menu-item`}>
-                About
-              </a>
-            </li>
-
-            <li className={isActive("/team")}>
-              <a href="/team" className={`sub-menu-item`}>
-                Team
-              </a>
-            </li>
-
-            <li className={isActive("/projects")}>
-              <a href="/projects" className={`sub-menu-item`}>
-                Projects
               </a>
             </li>
 
