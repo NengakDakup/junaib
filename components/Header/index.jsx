@@ -10,7 +10,7 @@ export const Header = () => {
   };
 
   return (
-    <nav id="topnav" className="defaultscroll is-sticky dark">
+    <nav id="topnav" className="defaultscroll is-sticky">
       <div className="container px-7 relative">
         <a className="logo" href="/">
           <img

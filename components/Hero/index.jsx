@@ -16,7 +16,8 @@ function Hero() {
                       Elevate Your Living Experience
                     </h1>
                     <p className="text-white/70 text-xl max-w-xl mx-auto">
-                      Discover the epitome of luxury living with Junab Realty.
+                      Discover the epitome of luxury living with{" "}
+                      <strong className="text-green-600">Junab Realty.</strong>
                     </p>
 
                     <div className="mt-6">
@@ -46,19 +47,52 @@ function Hero() {
                 <div className="grid grid-cols-1">
                   <div className="text-center">
                     <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">
-                      We will help you find <br /> your Wonderful home
+                      Smart Living, Smarter Investment
                     </h1>
                     <p className="text-white/70 text-xl max-w-xl mx-auto">
-                      A great plateform to buy, sell and rent your properties
-                      without any agent or commisions.
+                      Your gateway to a secure and intelligent living awaits.
                     </p>
 
                     <div className="mt-6">
                       <a
-                        href="#"
+                        href="/contact"
                         className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"
                       >
-                        See More
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                {/*end grid*/}
+              </div>
+              {/*end container*/}
+            </div>
+            {/* end slide-inner */}
+          </div>{" "}
+          {/* end swiper-slide */}
+          <div className="swiper-slide flex items-center overflow-hidden">
+            <div
+              className="slide-inner absolute end-0 top-0 w-full h-full slide-bg-image flex items-center bg-center;"
+              data-background="assets/images/bg/03.jpg"
+            >
+              <div className="absolute inset-0 bg-black/70"></div>
+              <div className="container relative">
+                <div className="grid grid-cols-1">
+                  <div className="text-center">
+                    <h1 className="font-bold text-white lg:leading-normal leading-normal text-4xl lg:text-5xl mb-6">
+                      Beyond Walls, We Craft Lifestyles
+                    </h1>
+                    <p className="text-white/70 text-xl max-w-xl mx-auto">
+                      <strong className="text-green-600">Junab Realty</strong>{" "}
+                      goes beyond building homes; we create lifestyles
+                    </p>
+
+                    <div className="mt-6">
+                      <a
+                        href="/contact"
+                        className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"
+                      >
+                        Contact Us
                       </a>
                     </div>
                   </div>
