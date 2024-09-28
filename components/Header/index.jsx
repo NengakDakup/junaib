@@ -1,18 +1,28 @@
 "use client";
 
+import { usePathname } from "next/navigation";
+
 export const Header = () => {
+  const pathname = usePathname();
+
+  const isActive = (path) => {
+    return pathname === path ? "active" : "";
+  };
+
   return (
     <nav id="topnav" className="defaultscroll is-sticky">
-      <div className="container relative">
+      <div className="container px-7 relative">
         <a className="logo" href="/">
           <img
-            src="assets/images/logo-dark.png"
-            className="inline-block dark:hidden !w-1"
+            src="assets/images/junab-logo.png"
+            className="inline-block dark:hidden w-1"
+            width={170}
             alt=""
           />
           <img
-            src="assets/images/logo-light.png"
-            className="hidden dark:inline-block !w-1"
+            src="assets/images/junab-logo.png"
+            className="hidden dark:inline-block w-1"
+            width={170}
             alt=""
           />
         </a>
@@ -32,7 +42,7 @@ export const Header = () => {
           </div>
         </div>
         <ul className="buy-button list-none mb-0">
-          <li className="sm:inline ps-1 mb-0 hidden">
+          <li className="inline mb-0">
             <a
               href="auth-signup.html"
               className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600 text-white rounded-full"
@@ -45,44 +55,53 @@ export const Header = () => {
 
         <div id="navigation">
           <ul className="navigation-menu justify-end">
-            <li>
+            <li className={isActive("/")}>
               <a href="/" className="sub-menu-item">
                 Home
               </a>
             </li>
 
-            <li>
-              <a href="/faq" className="sub-menu-item">
+            <li className={isActive("/faq")}>
+              <a href="/faq" className={`sub-menu-item ${isActive("/faq")}`}>
                 FAQs
               </a>
             </li>
 
-            <li>
-              <a href="/blog" className="sub-menu-item">
+            <li className={isActive("/blog")}>
+              <a href="/blog" className={`sub-menu-item ${isActive("/blog")}`}>
                 Blog
               </a>
             </li>
 
-            <li>
-              <a href="/about" className="sub-menu-item">
+            <li className={isActive("/about")}>
+              <a
+                href="/about"
+                className={`sub-menu-item ${isActive("/about")}`}
+              >
                 About
               </a>
             </li>
 
-            <li>
-              <a href="/team" className="sub-menu-item">
+            <li className={isActive("/team")}>
+              <a href="/team" className={`sub-menu-item ${isActive("/team")}`}>
                 Team
               </a>
             </li>
 
-            <li>
-              <a href="/projects" className="sub-menu-item">
+            <li className={isActive("/projects")}>
+              <a
+                href="/projects"
+                className={`sub-menu-item ${isActive("/projects")}`}
+              >
                 Projects
               </a>
             </li>
 
-            <li>
-              <a href="/contact" className="sub-menu-item">
+            <li className={isActive("/contact")}>
+              <a
+                href="/contact"
+                className={`sub-menu-item ${isActive("/contact")}`}
+              >
                 Contact us
               </a>
             </li>
