@@ -1,4 +1,5 @@
 import { teamMembers } from "@/data/teamMembers"
+import Image from "next/image"
 
 function OurTeamMembers() {
     const team = teamMembers
@@ -17,7 +18,7 @@ function OurTeamMembers() {
                 <div key={idx} className="lg:col-span-3 md:col-span-6">
                     <div className="group text-center">
                         <div className="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
-                            <img src={item?.img} className="" alt={item.name} />
+                            <Image src={item?.img} className="" alt={item.name} />
                             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"></div>
 
                             <ul className="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">

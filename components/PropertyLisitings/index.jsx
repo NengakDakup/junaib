@@ -1,4 +1,5 @@
 import { propertyListing } from '@/data/propertylisting'
+import Image from 'next/image';
 import Link from 'next/link';
 
 function PropertyListing() {
@@ -13,7 +14,7 @@ function PropertyListing() {
                 properties.map((item) => (
                     <div key={item._id} className="group rounded-xl bg-white dark:bg-slate-900 shadow hover:shadow-xl dark:hover:shadow-xl dark:shadow-gray-700 dark:hover:shadow-gray-700 overflow-hidden ease-in-out duration-500">
                         <div className="relative">
-                            <img src={item.img} alt={item.location} />
+                            <Image src={item.img} alt={item.location} />
 
                             <div className="absolute top-4 end-4">
                                 <a href="javascript:void(0)" className="btn btn-icon bg-white dark:bg-slate-900 shadow dark:shadow-gray-700 rounded-full text-slate-100 dark:text-slate-700 focus:text-red-600 dark:focus:text-red-600 hover:text-red-600 dark:hover:text-red-600"><i className="mdi mdi-heart text-[20px]"></i></a>

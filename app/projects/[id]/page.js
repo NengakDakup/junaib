@@ -3,6 +3,7 @@
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { property } from "@/data/propertylisting";
+import Image from "next/image";
 
 const Project = ({ params }) => {
     const { id } = params;
@@ -18,7 +19,7 @@ const Project = ({ params }) => {
             <div className="md:flex mt-4">
                 <div className="lg:w-1/2 md:w-1/2 p-1">
                     <div className="group relative overflow-hidden">
-                        <img src={propertyDetails?.img} alt={propertyDetails?.location} />
+                        <Image src={propertyDetails?.img} alt={propertyDetails?.location} />
                         <div className="absolute inset-0 group-hover:bg-slate-900/70 duration-500 ease-in-out"></div>
                         <div className="absolute top-1/2 -translate-y-1/2 start-0 end-0 text-center invisible group-hover:visible">
                             <a href={propertyDetails?.img} className="btn btn-icon bg-green-600 hover:bg-green-700 text-white rounded-full lightbox"><i className="uil uil-camera"></i></a>
