@@ -1,13 +1,12 @@
-import React from 'react'
 
-function AboutHero() {
+function BlogHero() {
   return (
     <>
         <section class="relative table w-full py-32 lg:py-36 bg-[url('../../assets/images/bg/01.html')] bg-no-repeat bg-center bg-cover">
             <div class="absolute inset-0 bg-black opacity-80"></div>
             <div class="container relative">
                 <div class="grid grid-cols-1 text-center mt-10">
-                    <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">About Us</h3>
+                    <h3 class="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Blog & News</h3>
                 </div>
             </div>
         </section>
@@ -22,4 +21,4 @@ function AboutHero() {
   )
 }
 
-export default AboutHero
+export default BlogHero
