@@ -14,7 +14,7 @@ function Property({ item }) {
 
             <div className="p-6">
                 <div className="pb-6">
-                    <Link href={`/projects/${item._id}`} className="text-lg hover:text-green-600 font-medium ease-in-out duration-500">{item.location}</Link>
+                    <Link href={`/properties/${item._id}`} className="text-lg hover:text-green-600 font-medium ease-in-out duration-500">{item.location}</Link>
                 </div>
 
                 <ul className="py-6 border-y border-slate-100 dark:border-gray-800 flex items-center list-none">

@@ -148,7 +148,7 @@ function FaqSection() {
             <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
         
             <div className="mt-6">
-                <a href="tel:2349012703920" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</a>
+                <a href="/contact" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</a>
             </div>
         </div>
     </div>

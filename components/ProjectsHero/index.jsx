@@ -3,11 +3,12 @@ import React from 'react'
 function ProjectsHero() {
   return (
     <>
-        <section className="relative table w-full py-32 lg:py-36 bg-[url('../../assets/images/bg/01.html')] bg-no-repeat bg-center bg-cover">
+        <section className="relative table w-full py-32 lg:py-36 bg-no-repeat bg-center bg-cover" style={{backgroundImage: "url('/assets/images/bg/01.jpg')"}}>
             <div className="absolute inset-0 bg-black opacity-80"></div>
             <div className="container relative">
                 <div className="grid grid-cols-1 text-center mt-10">
-                    <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Our Projects</h3>
+                    <h3 className="md:text-4xl text-3xl md:leading-normal leading-normal font-medium text-white">Property Listing</h3>
+                    <p className="text-white opacity-50 mt-4">Select from our exclusive collection of premium properties</p>
                 </div>
             </div>
         </section>
