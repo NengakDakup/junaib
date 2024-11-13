@@ -1,5 +1,6 @@
 "use client";
 
+import { ArrowRight } from "lucide-react";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -64,8 +65,7 @@ export const Header = () => {
               href="/book"
               className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600  rounded-full"
             >
-              Book Tour{" "}
-              <i data-feather="arrow-right" className="h-4 w-4 stroke-[3]"></i>
+              Book Tour <ArrowRight className="h-4 w-4 stroke-[3]" style={{marginLeft: "5px"}} />
             </a>
           </li>
         </ul>
