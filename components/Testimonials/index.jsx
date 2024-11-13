@@ -36,7 +36,7 @@ const Testimonials = () => {
                       className="tiny-slide tns-item"
                       id="tns1-item0"
                       aria-hidden="true"
-                      tabindex="-1"
+                      tabIndex="-1"
                     >
                       <div className="text-center mx-3">
                         <p className="text-lg text-slate-400 italic">
@@ -82,7 +82,7 @@ const Testimonials = () => {
                       className="tiny-slide tns-item"
                       id="tns1-item1"
                       aria-hidden="true"
-                      tabindex="-1"
+                      tabIndex="-1"
                     >
                       <div className="text-center mx-3">
                         <p className="text-lg text-slate-400 italic">
@@ -129,7 +129,7 @@ const Testimonials = () => {
                       className="tiny-slide tns-item"
                       id="tns1-item2"
                       aria-hidden="true"
-                      tabindex="-1"
+                      tabIndex="-1"
                     >
                       <div className="text-center mx-3">
                         <p className="text-lg text-slate-400 italic">
@@ -175,7 +175,7 @@ const Testimonials = () => {
                       className="tiny-slide tns-item"
                       id="tns1-item3"
                       aria-hidden="true"
-                      tabindex="-1"
+                      tabIndex="-1"
                     >
                       <div className="text-center mx-3">
                         <p className="text-lg text-slate-400 italic">
