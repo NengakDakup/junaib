@@ -8,6 +8,7 @@ import "@/public/assets/libs/@mdi/font/css/materialdesignicons.min.css";
 import "@/public/assets/css/tailwind.min.css";
 import "@/public/assets/css/font.css";
 import Script from "next/script";
+import BackToTop from "@/components/BackToTop";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -31,6 +32,7 @@ export default function RootLayout({ children }) {
       <Script src="/assets/libs/feather-icons/feather.min.js"></Script>
       <Script src="/assets/js/plugins.init.js"></Script>
       <Script src="/assets/js/app.js"></Script>
+      <BackToTop />
     </html>
   );
 }

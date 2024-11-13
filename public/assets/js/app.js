@@ -119,33 +119,6 @@ if (document.getElementById("navigation")) {
     }
 }
 
-
-/*********************/
-/*    Back To Top    */
-/*********************/
-
-function scrollFunction() {
-    const mybutton = document.getElementById("back-to-top");
-    if (mybutton != null) {
-        if (window.scrollY > 500) {
-            mybutton.classList.add("flex");
-            mybutton.classList.remove("hidden");
-        } else {
-            mybutton.classList.add("hidden");
-            mybutton.classList.remove("flex");
-        }
-    }
-}
-
-window.addEventListener('scroll', scrollFunction);
-
-function topFunction() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-}
-
 /*********************/
 /*  Active Sidebar   */
 /*********************/
