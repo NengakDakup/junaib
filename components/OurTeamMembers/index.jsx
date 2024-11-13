@@ -1,58 +1,64 @@
 import { teamMembers } from "@/data/teamMembers"
+import { ArrowRight } from "lucide-react"
 import Image from "next/image"
 
 function OurTeamMembers() {
     const team = teamMembers
 
   return (
-    <div className="container relative">
-    <div className="grid grid-cols-1 pb-8 text-center">
-        <h3 className="mb-4 md:text-3xl md:leading-normal text-2xl leading-normal font-semibold">Meet The Agent Team</h3>
+    <div className="container relative lg:mt-30 mt-24" style={{paddingBottom: "80px"}}>
+      <div className="grid md:grid-cols-12 grid-cols-1 items-center gap-[30px]">
+        <div className="md:col-span-5">
+          <div className="relative">
+            <img
+              src="/assets/images/abdulbasit.jpg"
+              className="rounded-xl shadow-md"
+              alt=""
+            />
+            
+          </div>
+        </div>
 
-        <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
-    </div>
-    <div className="grid md:grid-cols-12 grid-cols-1 mt-8 gap-[30px]">
-        
-        {
-            team?.map((item, idx) => (
-                <div key={idx} className="lg:col-span-3 md:col-span-6">
-                    <div className="group text-center">
-                        <div className="relative inline-block mx-auto h-52 w-52 rounded-full overflow-hidden">
-                            <Image src={item?.img} className="" alt={item.name} />
-                            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black h-52 w-52 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 ease-in-out"></div>
-
-                            <ul className="list-none absolute start-0 end-0 -bottom-20 group-hover:bottom-5 transition-all duration-500 ease-in-out">
-                                {
-                                    item.socials.map((social, idx) => (
-                                        <li key={idx} className="inline"><a href="#" className="btn btn-icon btn-sm rounded-full border border-green-600 bg-green-600 hover:border-green-600 hover:bg-green-600 text-white"><i data-feather={`${social.name}`} className="h-4 w-4"></i></a></li>
-                                    ))
-                                }
-                            </ul>
-                        </div>
-
-                        <div className="content mt-3">
-                            <a href="#" className="text-xl font-medium hover:text-green-600 transition-all duration-500 ease-in-out">{item.name}</a>
-                            <p className="text-slate-400">{item.role}</p>
-                        </div>
-                    </div>
-                </div>
-            ))
-        }
-        
-    </div>
-
-    <div className="container relative lg:mt-24 mt-16">
-                <div className="grid grid-cols-1 text-center">
-                    <h3 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-medium text-black dark:text-white">Have Question ? Get in touch!</h3>
-
-                    <p className="text-slate-400 max-w-xl mx-auto">A great plateform to buy, sell and rent your properties without any agent or commisions.</p>
-                
-                    <div className="mt-6">
-                        <a href="/contact" className="btn bg-green-600 hover:bg-green-700 text-white rounded-md"><i className="uil uil-phone align-middle me-2"></i> Contact us</a>
-                    </div>
-                </div>
+        <div className="md:col-span-7">
+          <div className="lg:ms-4">
+            <h4 className="md:text-3xl text-2xl font-semibold">
+                Abdulbasit Ohiare.
+            </h4>
+            <h4 className="md:text-xl text-xl font-semibold">
+                Founder CEO.
+            </h4>
+            <p className="text-slate-400 max-w-xl mt-4">
+              At Junab Realty, we take pride in being your trusted partner in
+              the world of real estate. With a passion for connecting people
+              with their dream homes and investment opportunities, we are
+              dedicated to providing unparalleled service in the vibrant city of
+              Abuja
+            </p>
+            <div className="mt-4 flex gap-2">
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" style={{width: 40, height: 40, marginRight: 10}} className="inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-gray-300 text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600">
+                <i className="mdi mdi-linkedin"></i>
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" style={{width: 40, height: 40, marginRight: 10}} className="inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-gray-300 text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600">
+                <i className="mdi mdi-twitter"></i>
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" style={{width: 40, height: 40}} className="inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-gray-300 text-slate-400 hover:border-green-600 hover:text-white hover:bg-green-600">
+                <i className="mdi mdi-instagram"></i>
+              </a>
             </div>
-</div>
+
+            <div className="mt-4">
+              <a
+                href="/contact"
+                className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-3"
+              >
+                Contact Us <ArrowRight className="h-4 w-4 stroke-[3]" style={{marginLeft: "5px"}} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   )
 }
 

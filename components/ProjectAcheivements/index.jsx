@@ -11,13 +11,13 @@ function ProjectAcheivements() {
                 <div className="grid md:grid-cols-3 grid-cols-1 items-center">
                     
                     <div className="counter-box text-center">
-                        <h1 className="text-white lg:text-5xl text-4xl font-semibold mb-2"><span className="counter-value" data-target="1548">1010</span>+</h1>
-                        <h5 className="counter-head text-white text-lg font-medium">Properties Sell</h5>
+                        <h1 className="text-white lg:text-5xl text-4xl font-semibold mb-2"><span className="counter-value" data-target="50">50</span>+</h1>
+                        <h5 className="counter-head text-white text-lg font-medium">Properties Sold</h5>
                     </div>
 
                     
                     <div className="counter-box text-center">
-                        <h1 className="text-white lg:text-5xl text-4xl font-semibold mb-2"><span className="counter-value" data-target="25">2</span>+</h1>
+                        <h1 className="text-white lg:text-5xl text-4xl font-semibold mb-2"><span className="counter-value" data-target="8">8</span>+</h1>
                         <h5 className="counter-head text-white text-lg font-medium">Award Gained</h5>
                     </div>
 

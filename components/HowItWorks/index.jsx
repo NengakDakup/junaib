@@ -9,8 +9,8 @@ function HowItWorks() {
         </h3>
 
         <p className="text-slate-400 max-w-xl mx-auto">
-          A great plateform to buy, sell and rent your properties without any
-          agent or commisions.
+          A great platform to buy, sell and rent your properties without any
+          agent or commissions.
         </p>
       </div>
 
@@ -29,7 +29,7 @@ function HowItWorks() {
           <div className="mt-6">
             <h5 className="text-xl font-medium">Our Mission</h5>
             <p className="text-slate-400 mt-3">
-                Roofing mission refers to the specific goals and objectives that Roofing company aims to
+              To provide exceptional real estate services by connecting buyers and sellers through a transparent, efficient platform.
             </p>
           </div>
         </div>
@@ -48,7 +48,7 @@ function HowItWorks() {
           <div className="mt-6">
             <h5 className="text-xl font-medium">Our Vision</h5>
             <p className="text-slate-400 mt-3">
-                Roofing vision refers to the overall purpose or mission that a roofing companys to achieve
+              To revolutionize the real estate industry by making property transactions seamless, accessible, and commission-free.
             </p>
           </div>
         </div>
@@ -67,7 +67,7 @@ function HowItWorks() {
           <div className="mt-6">
             <h5 className="text-xl font-medium">Trusted Services</h5>
             <p className="text-slate-400 mt-3">
-                Roofing vision refers to the overall purpose or mission that a roofing companys to achieve
+              We ensure secure, reliable, and transparent property transactions backed by cutting-edge technology and expert support.
             </p>
           </div>
         </div>
