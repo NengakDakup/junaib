@@ -1,6 +1,7 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import { useEffect } from "react";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -8,6 +9,22 @@ export const Header = () => {
   const isActive = (path) => {
     return pathname === path ? "active" : "";
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const navbar = document.getElementById("topnav");
+      if (navbar) {
+        if (window.scrollY >= 50) {
+          navbar.classList.add("nav-sticky");
+        } else {
+          navbar.classList.remove("nav-sticky");
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <nav id="topnav" className="defaultscroll is-sticky">

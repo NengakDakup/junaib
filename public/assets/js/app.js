@@ -118,39 +118,16 @@ if (document.getElementById("navigation")) {
         }
     }
 }
-/*********************/
-/*   Menu Sticky     */
-/*********************/
-function windowScroll() {
-    const navbar = document.getElementById("topnav");
-    if (navbar != null) {
-        if (
-            document.body.scrollTop >= 50 ||
-            document.documentElement.scrollTop >= 50
-        ) {
-            navbar.classList.add("nav-sticky");
-        } else {
-            navbar.classList.remove("nav-sticky");
-        }
-    }
-}
 
-window.addEventListener('scroll', (ev) => {
-    ev.preventDefault();
-    windowScroll();
-})
-/*********************/
-/*    Back To TOp    */
-/*********************/
 
-window.onscroll = function () {
-    scrollFunction();
-};
+/*********************/
+/*    Back To Top    */
+/*********************/
 
 function scrollFunction() {
-    var mybutton = document.getElementById("back-to-top");
-    if(mybutton!=null){
-        if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    const mybutton = document.getElementById("back-to-top");
+    if (mybutton != null) {
+        if (window.scrollY > 500) {
             mybutton.classList.add("flex");
             mybutton.classList.remove("hidden");
         } else {
@@ -160,9 +137,13 @@ function scrollFunction() {
     }
 }
 
+window.addEventListener('scroll', scrollFunction);
+
 function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
 }
 
 /*********************/

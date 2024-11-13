@@ -13,29 +13,29 @@ function ContactUs() {
                     <div className="bg-white dark:bg-slate-900 rounded-md shadow dark:shadow-gray-700 p-6">
                         <h3 className="mb-6 text-2xl leading-normal font-medium">Get in touch !</h3>
 
-                        <form method="post" name="myForm" id="myForm" onsubmit="return validateForm()">
+                        <form method="post" name="myForm" id="myForm" onSubmit="return validateForm()">
                             <p className="mb-0" id="error-msg"></p>
                             <div id="simple-msg"></div>
                             <div className="grid lg:grid-cols-12 lg:gap-6">
                                 <div className="lg:col-span-6 mb-5">
-                                    <label for="name" className="font-medium">Your Name:</label>
+                                    <label htmlFor="name" className="font-medium">Your Name:</label>
                                     <input name="name" id="name" type="text" className="form-input mt-2" placeholder="Name :" />
                                 </div>
 
                                 <div className="lg:col-span-6 mb-5">
-                                    <label for="email" className="font-medium">Your Email:</label>
+                                    <label htmlFor="email" className="font-medium">Your Email:</label>
                                     <input name="email" id="email" type="email" className="form-input mt-2" placeholder="Email :" />
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-1">
                                 <div className="mb-5">
-                                    <label for="subject" className="font-medium">Your Question:</label>
+                                    <label htmlFor="subject" className="font-medium">Your Question:</label>
                                     <input name="subject" id="subject" className="form-input mt-2" placeholder="Subject :" />
                                 </div>
 
                                 <div className="mb-5">
-                                    <label for="comments" className="font-medium">Your Comment:</label>
+                                    <label htmlFor="comments" className="font-medium">Your Comment:</label>
                                     <textarea name="comments" id="comments" className="form-input mt-2 textarea" placeholder="Message :"></textarea>
                                 </div>
                             </div>
