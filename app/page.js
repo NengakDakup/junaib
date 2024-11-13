@@ -1,5 +1,6 @@
 "use client";
 import ContactUs from "@/components/ContactUs";
+import FeaturedProperties from "@/components/FeaturedProperties";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -20,6 +21,8 @@ export default function Home() {
       {/* <Info /> */}
 
       <Features />
+
+      <FeaturedProperties />
 
       <Testimonials />
 

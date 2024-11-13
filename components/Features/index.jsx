@@ -13,7 +13,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Architectural Ingenuity</a>
+                <p className="text-xl hover:text-green-600 font-medium">Architectural Ingenuity</p>
                 <p className="text-slate-400 mt-3 text-[14px]">At Junab, we believe in pushing the boundaries of conventional design. Our team of skilled architects and designers bring creativity and innovation to every project.</p>
             </div>
         </div>
@@ -27,7 +27,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Quality Construction</a>
+                <p className="text-xl hover:text-green-600 font-medium">Quality Construction</p>
                 <p className="text-slate-400 mt-3 text-[14px]">Our commitment to using premium materials and employing top-notch construction practices ensures that each structure we build is not just a house but a lasting legacy.</p>
             </div>
         </div>
@@ -41,7 +41,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Affordable Luxury</a>
+                <p className="text-xl hover:text-green-600 font-medium">Affordable Luxury</p>
                 <p className="text-slate-400 mt-3 text-[14px]">Luxury shouldn’t be exclusive; it should be accessible. Junab specializes in creating affordable smart luxury homes. We redefine luxury living by combining elegance with cost-effectiveness.</p>
             </div>
         </div>
@@ -55,7 +55,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Innovative Technology</a>
+                <p className="text-xl hover:text-green-600 font-medium">Innovative Technology</p>
                 <p className="text-slate-400 mt-3 text-[14px]">Embrace the future with our smart homes. We integrate the latest in home automation and sustainable technologies to create residences that are not just beautiful but also intelligent</p>
             </div>
         </div>
@@ -69,7 +69,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Transparent Processes</a>
+                <p className="text-xl hover:text-green-600 font-medium">Transparent Processes</p>
                 <p className="text-slate-400 mt-3 text-[14px]">Transparency is key to building trust. At Junab, we pride ourselves on clear and honest communication. Our clients are kept informed at every stage of the development process.</p>
             </div>
         </div>
@@ -83,7 +83,7 @@ function Features() {
             </div>
 
             <div className="mt-6">
-                <a href="#" className="text-xl hover:text-green-600 font-medium">Customer Satisfaction</a>
+                <p className="text-xl hover:text-green-600 font-medium">Customer Satisfaction</p>
                 <p className="text-slate-400 mt-3 text-[14px]">Your satisfaction is our ultimate goal. We go above and beyond to understand the unique needs and desires of our clients, ensuring that each project is a reflection of their vision.</p>
             </div>
         </div>

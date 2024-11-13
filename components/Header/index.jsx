@@ -84,9 +84,9 @@ export const Header = () => {
               </a>
             </li>
 
-            <li className={isActive("/projects")}>
-              <a href="/projects" className={`sub-menu-item`}>
-                Projects
+            <li className={isActive("/properties")}>
+              <a href="/properties" className={`sub-menu-item`}>
+                Properties
               </a>
             </li>
 
