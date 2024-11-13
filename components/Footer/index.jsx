@@ -43,13 +43,11 @@ function Footer() {
                         <div className="flex-1">
                             <h5 className="tracking-[1px] text-gray-100 font-semibold">Company</h5>
                             <ul className="list-none footer-list mt-6">
-                                <li><a href="terms.html" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Blog</a></li>
-                                <li className="mt-[10px]"><a href="privacy.html" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> About us</a></li>
-                                <li className="mt-[10px]"><a href="listing-one.html" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Team</a></li>
-                                <li className="mt-[10px]"><a href="contact.html" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i> Projects</a></li>
-                                <li className="mt-[10px]"><a href="contact.html" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Contact </a></li>
+                                <li><a href="/blog" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Blog</a></li>
+                                <li className="mt-[10px]"><a href="/about" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>About us</a></li>
+                                <li className="mt-[10px]"><a href="/properties" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Properties</a></li>
                                 <li className="mt-[10px]"><a href="/faq" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>FAQ</a></li>
-
+                                <li className="mt-[10px]"><a href="/contact" className="text-slate-300 hover:text-slate-400 duration-500 ease-in-out"><i className="uil uil-angle-right-b me-1"></i>Contact</a></li>
                             </ul>
                         </div>
 

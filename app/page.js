@@ -1,5 +1,6 @@
 "use client";
 import ContactUs from "@/components/ContactUs";
+import FeaturedPosts from "@/components/FeaturedPosts";
 import FeaturedProperties from "@/components/FeaturedProperties";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
@@ -25,6 +26,8 @@ export default function Home() {
       <FeaturedProperties />
 
       <Testimonials />
+
+      <FeaturedPosts />
 
       <ContactUs />
 
