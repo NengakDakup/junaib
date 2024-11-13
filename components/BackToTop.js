@@ -5,6 +5,22 @@ import { useEffect } from "react";
 const BackToTop = () => {
 
   useEffect(() => {
+    if (typeof window !== 'undefined') {
+      if (typeof feather !== 'undefined') {
+        feather.replace();
+      } else {
+        // If feather isn't loaded yet, wait for it
+        const checkFeather = setInterval(() => {
+          if (typeof feather !== 'undefined') {
+            feather.replace();
+            clearInterval(checkFeather);
+          }
+        }, 100);
+      }
+    }
+  }, [])
+
+  useEffect(() => {
     const handleScroll = () => {
       const mybutton = document.getElementById("back-to-top");
       if (mybutton != null) {

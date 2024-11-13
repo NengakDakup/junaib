@@ -1,3 +1,4 @@
+import { ArrowRight } from "lucide-react";
 import React from "react";
 
 function WhatWeAre() {
@@ -53,7 +54,7 @@ function WhatWeAre() {
                 href="/about"
                 className="btn bg-green-600 hover:bg-green-700 text-white rounded-md mt-3"
               >
-                Read More{" "}
+                Read More <ArrowRight className="h-4 w-4 stroke-[3]" style={{marginLeft: "5px"}} />
               </a>
             </div>
           </div>

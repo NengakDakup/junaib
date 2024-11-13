@@ -13,7 +13,7 @@ import BackToTop from "@/components/BackToTop";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "JUNAIB",
+  title: "JUNAIB REALTY",
   description: "We will help you build your Wonderful home",
 };
 

@@ -133,10 +133,6 @@ if (document.getElementById("navigation")) {
     }
 })();
 
-/*********************/
-/*   Feather Icons   */
-/*********************/
-feather.replace();
 
 /*********************/
 /*     Small Menu    */
