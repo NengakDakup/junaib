@@ -32,15 +32,15 @@ export const Header = () => {
       <div className="container px-7 relative">
         <a className="logo" href="/">
           <img
-            src="assets/images/junab-logo.png"
+            src="/assets/images/logo-light.png"
+            style={{height: "80px", width: "auto"}}
             className="inline-block dark:hidden w-1"
-            width={170}
             alt=""
           />
           <img
-            src="assets/images/junab-logo.png"
+            src="/assets/images/logo-light.png"
+            style={{height: "80px", width: "auto"}}
             className="hidden dark:inline-block w-1"
-            width={170}
             alt=""
           />
         </a>
