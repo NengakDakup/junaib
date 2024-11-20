@@ -62,7 +62,7 @@ export const Header = () => {
         <ul className="buy-button list-none mb-0">
           <li className="inline mb-0">
             <a
-              href="/propperties"
+              href="/properties"
               className="btn bg-green-600 hover:bg-green-700 border-green-600 dark:border-green-600  rounded-full"
             >
               Book Tour <ArrowRight className="h-4 w-4 stroke-[3]" style={{marginLeft: "5px"}} />
